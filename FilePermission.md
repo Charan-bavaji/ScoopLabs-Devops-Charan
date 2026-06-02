@@ -156,3 +156,5 @@ Permission **544** successfully allows:
 - ❌ No one can write to the file.
 
 This ensures that only the owner can execute the script while everyone else can view its contents.
+<img width="960" height="946" alt="image" src="https://github.com/user-attachments/assets/50c236f3-e9db-4d3b-8368-dd3ae3766960" />
+
