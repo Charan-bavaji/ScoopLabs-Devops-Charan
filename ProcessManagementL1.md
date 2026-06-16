@@ -88,3 +88,5 @@ root  2984  0.0  0.0  4088  2044 pts/4  S+ 08:46  0:00 grep --color=auto sleep
 | Graceful kill (SIGTERM) | `kill 2971` |
 | Force kill (SIGKILL) | `kill -9 2976` |
 | Verify process is gone | `ps aux \| grep sleep` |
+
+<img width="958" height="1017" alt="image" src="https://github.com/user-attachments/assets/e2b058f9-ccc9-4e74-a3ca-78c3d28551c3" />
