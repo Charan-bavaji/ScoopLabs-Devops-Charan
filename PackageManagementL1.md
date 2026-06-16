@@ -71,3 +71,5 @@ Features: alt-svc AsynchDNS brotli HSTS HTTP2 IPv6 SSL zstd ...
 | Update package list | `sudo apt update` |
 | Install curl | `sudo apt install curl -y` |
 | Verify installation | `curl --version` |
+
+<img width="958" height="1020" alt="image" src="https://github.com/user-attachments/assets/3d01bcdf-51ff-4363-a663-3b3f39a8e495" />
