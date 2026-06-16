@@ -86,3 +86,6 @@ a5d80cf Package Management L1
 | Stage file | `git add README.md` |
 | Commit with message | `git commit -m "Initial commit: Add README"` |
 | View commit history | `git log --oneline` |
+
+
+<img width="960" height="792" alt="image" src="https://github.com/user-attachments/assets/1955f639-d266-45ae-b0d6-2f42d7c2658d" />
