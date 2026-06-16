@@ -77,3 +77,5 @@ devteam:x:1004:devuser
 - `id devuser` → devuser belongs to their own group (1001) **and** devteam (1004) ✅
 - `getent group devteam` → devteam group exists with devuser as a member ✅
 - `ls -l` → devuser's home directory was created successfully ✅
+
+<img width="960" height="593" alt="image" src="https://github.com/user-attachments/assets/dcc2c2c2-8c43-48ce-af84-cf0abf22ade4" />
