@@ -85,3 +85,6 @@ git branch
 | Check status | `git status` |
 | Stage changes | `git add .` |
 | Commit changes | `git commit -m "updated read me file"` |
+
+
+<img width="946" height="820" alt="image" src="https://github.com/user-attachments/assets/5d3bb05b-bfd5-48f3-a209-3673b3de0374" />
