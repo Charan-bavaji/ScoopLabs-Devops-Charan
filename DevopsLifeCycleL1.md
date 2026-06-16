@@ -21,7 +21,8 @@
 
 ## Hands-on Task: Infinity Loop Diagram
 
-![DevOps Infinity Loop](devops_infinity_loop.svg)
+<img width="1303" height="631" alt="image" src="https://github.com/user-attachments/assets/c6b0cbe3-a6c9-4d21-936b-16e675686089" />
+
 
 ---
 
