@@ -108,6 +108,12 @@ crontab -l
 | Make executable | `chmod +x script.sh` |
 | Schedule automation | `crontab -e` / `0 0 * * * /path/to/script.sh` |
 
+<img width="957" height="1016" alt="image" src="https://github.com/user-attachments/assets/23077d31-f495-4b75-a6a0-0bf2d29f8279" />
+<img width="957" height="1012" alt="image" src="https://github.com/user-attachments/assets/2ed4a256-0c66-45ba-a7d8-95d1d4f05bee" />
+<img width="960" height="302" alt="image" src="https://github.com/user-attachments/assets/2664b13a-2d08-4836-8200-2cf52542f248" />
+
+
+
 ## Submission Checklist
 
 - [x] `daily_backup.sh` pushed to `devops-learning-journey` repo
