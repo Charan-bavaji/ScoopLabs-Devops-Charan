@@ -45,6 +45,9 @@ grep "ERROR" server.log
 2026-06-17 10:07:48 ERROR Null pointer exception in payment module
 ```
 
+<img width="947" height="1021" alt="image" src="https://github.com/user-attachments/assets/9ffe5474-5f6f-40a9-9dd8-0aaae52d1026" />
+
+
 All 3 lines containing "ERROR" were correctly extracted from the 10-line log file, with no false matches.
 
 ## Submission Checklist
@@ -52,4 +55,3 @@ All 3 lines containing "ERROR" were correctly extracted from the 10-line log fil
 - [x] Dummy log file (`server.log`) created with 10 lines
 - [x] `grep "ERROR" server.log` command documented
 - [x] Output captured above
-- [ ] Terminal screenshot (add to repo)
