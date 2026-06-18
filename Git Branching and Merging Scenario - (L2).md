@@ -94,21 +94,6 @@ To https://github.com/Charan-bavaji/GitHubActionsPrac.git
    3d632a3..d4da5a3  main -> main
 ```
 
----
-
-## git log --graph --oneline --all Output (Screenshot Placeholder)
-
-> 📸 Insert screenshot of the terminal output here for submission:
-> ```
-> * d4da5a3 (HEAD -> main, dev) Add Login feature to dev branch
-> | * 563cc5b (origin/feature-update, feature-update) updated read me file
-> |/
-> * 3d632a3 (origin/main, origin/charan, origin/HEAD) created home2 folder and create file
-> * bf1894b first commit
-> ```
-
----
-
 ## Summary of Commands Used
 
 | Purpose | Command |
@@ -125,3 +110,7 @@ To https://github.com/Charan-bavaji/GitHubActionsPrac.git
 | View history graph | `git log --graph --oneline --all` |
 | Delete merged branch | `git branch -d dev` |
 | Push to remote | `git push` |
+
+
+<img width="1918" height="1020" alt="image" src="https://github.com/user-attachments/assets/828acda7-d913-4a8a-bfd0-1cf3dff533a9" />
+
