@@ -1,0 +1,191 @@
+# Docker Images and Containers — L1
+## Charan Bavaji – Docker Images and Containers Assignment (L1)
+
+---
+
+## Problem Statement
+
+Understand the relationship between Docker Images and Docker Containers (blueprint vs running instance). Pull the official `nginx` image from Docker Hub, start it as a detached container with port mapping, and verify both the image and running container state using `docker images` and `docker ps`.
+
+---
+
+## Concept: Docker Image vs Docker Container
+
+| Aspect | Docker Image | Docker Container |
+|---|---|---|
+| Nature | Static, read-only template | Dynamic, running process |
+| Created by | `docker build` or `docker pull` | `docker run` |
+| Storage | Registry / local image cache | In-memory + thin writable layer |
+| Lifecycle | Persists until explicitly deleted | Lives while its process runs |
+| Mutability | Immutable — content-addressed layers | Mutable — changes go to writable layer |
+| Analogy | Class / Blueprint / ISO file | Object / Running instance |
+| Sharing | One image → many containers | Each container is independent |
+
+**Layer Architecture:**
+Docker images are composed of stacked, read-only layers (each `RUN`, `COPY`, `ADD` instruction in a Dockerfile creates a layer). When `docker pull nginx` runs, each layer downloads separately and is cached locally. A container adds one thin **writable layer** on top of the image layers at runtime. Deleting the container removes only that writable layer — the image layers remain intact and reusable.
+
+```
+┌─────────────────────────┐  ← Writable container layer (deleted on docker rm)
+├─────────────────────────┤
+│   nginx config layer    │  ← Read-only image layers
+├─────────────────────────┤
+│   nginx binary layer    │
+├─────────────────────────┤
+│   Debian base OS layer  │
+└─────────────────────────┘
+```
+
+---
+
+## Environment
+
+| Detail | Value |
+|---|---|
+| Platform | AWS EC2 |
+| OS | Amazon Linux 2023 |
+| Instance | `ip-172-31-31-228` |
+| User | `devuser` |
+| Hostname | `Ozoo` |
+| Docker Version | 25.x |
+
+---
+
+## Steps Followed
+
+### Step 1 — Pull the Official nginx Image from Docker Hub
+
+```bash
+docker pull nginx
+```
+
+Docker contacts Docker Hub, resolves `nginx:latest`, and downloads each image layer sequentially. Layers already cached locally are skipped with `Already exists`.
+
+### Step 2 — Verify Image in Local Cache
+
+```bash
+docker images
+```
+
+Confirms the `nginx:latest` image is stored locally with its Image ID, creation date, and size.
+
+**Screenshot:** `screenshots/docker-images.png`
+
+### Step 3 — Run nginx in Detached Mode with Port Mapping
+
+```bash
+docker run -d --name my-nginx -p 8081:80 nginx
+```
+
+**Flag breakdown:**
+
+| Flag | Meaning |
+|---|---|
+| `-d` | Detached mode — container runs in background, terminal is free |
+| `--name my-nginx` | Assigns a friendly name instead of a random auto-generated one |
+| `-p 8081:80` | Maps host port 8081 → container port 80 (nginx default listener) |
+| `nginx` | Image to create the container from |
+
+> Port 8081 used instead of 8080 because Jenkins is already bound to 8080 on this EC2 instance.
+
+### Step 4 — Verify Container is Running
+
+```bash
+docker ps
+```
+
+Shows the running container with its ID, image, command, uptime, port binding, and name.
+
+**Screenshot:** `screenshots/docker-ps.png`
+
+### Step 5 — Test nginx is Serving (Bonus)
+
+```bash
+curl http://localhost:8081
+```
+
+Returns the nginx default welcome page HTML, confirming the container is live and port mapping works.
+
+### Step 6 — Inspect Container Details
+
+```bash
+docker inspect my-nginx
+```
+
+Returns full JSON metadata: IP address, network config, mounts, environment variables, port bindings — useful for debugging container behavior.
+
+### Step 7 — View Container Logs
+
+```bash
+docker logs my-nginx
+```
+
+Shows nginx startup output and HTTP access logs for any requests made to the container.
+
+---
+
+## Output
+
+### `docker images` output
+```
+REPOSITORY   TAG       IMAGE ID       CREATED        SIZE
+nginx        latest    xxxxxxxxxx     x days ago     187MB
+```
+
+### `docker ps` output
+```
+CONTAINER ID   IMAGE   COMMAND                  CREATED         STATUS         PORTS                                   NAMES
+xxxxxxxxxxxx   nginx   "/docker-entrypoint.…"   x seconds ago   Up x seconds   0.0.0.0:8081->80/tcp, :::8081->80/tcp   my-nginx
+```
+
+### `curl http://localhost:8081` output
+```html
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome to nginx!</title>
+...
+</html>
+```
+
+---
+
+## Key Concepts Learned
+
+- **Image pull lifecycle:** `docker pull` resolves the tag → downloads missing layers → caches locally
+- **`docker run` lifecycle:** checks local cache → pulls if missing → creates container → starts process
+- **Detached mode (`-d`):** container runs as a background daemon; interact via `docker logs` or `docker exec`
+- **Port mapping (`-p host:container`):** bridges host network to container network; container is isolated by default
+- **`docker ps` vs `docker ps -a`:** running containers only vs all containers including stopped/exited
+
+---
+
+## Cleanup (Post-Screenshot)
+
+```bash
+docker stop my-nginx    # stops the running container (container still exists)
+docker rm my-nginx      # removes the stopped container (writable layer deleted)
+docker rmi nginx        # removes the nginx image from local cache
+```
+
+---
+
+## Logs / Screenshots
+
+| File | Description |
+|---|---|
+| `screenshots/docker-images.png` | Output of `docker images` showing nginx image |
+| `screenshots/docker-ps.png` | Output of `docker ps` showing running my-nginx container |
+
+---
+
+## Repository Structure
+
+```
+devops-learning-journey/
+└── docker/
+    └── L1-images-and-containers/
+        ├── README.md
+        └── screenshots/
+            ├── docker-images.png
+            └── docker-ps.png
+```
