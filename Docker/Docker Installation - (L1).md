@@ -137,7 +137,7 @@ To generate this message, Docker took the following steps:
 ...
 ```
 
-> **Screenshot:** See `screenshots/docker-hello-world.png`
+
 
 ---
 
@@ -150,22 +150,8 @@ To generate this message, Docker took the following steps:
 - **docker run lifecycle** — `pull (if needed) → create container → start container → execute → exit`
 
 ---
+<img width="1920" height="1080" alt="Screenshot (3)" src="https://github.com/user-attachments/assets/fca73469-43db-4980-aa7e-b1ec8ec68219" />
+<img width="1920" height="1080" alt="Screenshot (2)" src="https://github.com/user-attachments/assets/466b7ef2-5e67-42e1-b9a4-a622af7dc1d6" />
 
-## Logs / Screenshots
 
-| File | Description |
-|---|---|
-| `screenshots/docker-hello-world.png` | Terminal output of `docker run hello-world` |
-
----
-
-## Repository Structure
-
-```
-devops-learning-journey/
-└── docker/
-    └── L1-docker-installation/
-        ├── README.md                        ← this file
-        └── screenshots/
-            └── docker-hello-world.png
 ```
