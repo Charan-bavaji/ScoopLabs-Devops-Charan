@@ -68,7 +68,6 @@ docker images
 
 Confirms the `nginx:latest` image is stored locally with its Image ID, creation date, and size.
 
-**Screenshot:** `screenshots/docker-images.png`
 
 ### Step 3 — Run nginx in Detached Mode with Port Mapping
 
@@ -158,34 +157,3 @@ xxxxxxxxxxxx   nginx   "/docker-entrypoint.…"   x seconds ago   Up x seconds  
 - **`docker ps` vs `docker ps -a`:** running containers only vs all containers including stopped/exited
 
 ---
-
-## Cleanup (Post-Screenshot)
-
-```bash
-docker stop my-nginx    # stops the running container (container still exists)
-docker rm my-nginx      # removes the stopped container (writable layer deleted)
-docker rmi nginx        # removes the nginx image from local cache
-```
-
----
-
-## Logs / Screenshots
-
-| File | Description |
-|---|---|
-| `screenshots/docker-images.png` | Output of `docker images` showing nginx image |
-| `screenshots/docker-ps.png` | Output of `docker ps` showing running my-nginx container |
-
----
-
-## Repository Structure
-
-```
-devops-learning-journey/
-└── docker/
-    └── L1-images-and-containers/
-        ├── README.md
-        └── screenshots/
-            ├── docker-images.png
-            └── docker-ps.png
-```
