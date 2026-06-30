@@ -157,3 +157,4 @@ xxxxxxxxxxxx   nginx   "/docker-entrypoint.…"   x seconds ago   Up x seconds  
 - **`docker ps` vs `docker ps -a`:** running containers only vs all containers including stopped/exited
 
 ---
+<img width="1920" height="1080" alt="Screenshot (3)" src="https://github.com/user-attachments/assets/35c6aa40-5af8-4472-aed0-dca561a8aad8" />
