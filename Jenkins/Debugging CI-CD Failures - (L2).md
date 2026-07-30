@@ -57,4 +57,8 @@ This turned out to be unrelated to the Docker fix — the EC2 instance type had 
 
 Re-ran the pipeline after both fixes (docker group membership + correct instance type). All stages passed — Checkout, Build Client Image, Build Server Image, Push to DockerHub, Deploy, and the health check — confirming the pipeline was fully restored to working order.
 
+<img width="1901" height="1020" alt="Screenshot 2026-07-30 191435" src="https://github.com/user-attachments/assets/6ce8d595-a5c8-4f74-8667-f7d92f2e95f4" />
+
+<img width="1920" height="1080" alt="Screenshot (28)" src="https://github.com/user-attachments/assets/f600ff7d-79cd-4391-87f7-c2d4a8047160" />
+
 
