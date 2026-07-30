@@ -29,8 +29,5 @@ In short: Freestyle is fine for quick, simple, one-off automation, but doesn't s
 - Ran the job and confirmed it built successfully.
 
 ## Submission
-Screenshot of the job configuration page:
-
-
-
 Screenshot of the successful Console Output:
+<img width="1920" height="1080" alt="Screenshot (22)" src="https://github.com/user-attachments/assets/3158e4c1-165e-45ec-a2ca-d96e5dfb8048" />
