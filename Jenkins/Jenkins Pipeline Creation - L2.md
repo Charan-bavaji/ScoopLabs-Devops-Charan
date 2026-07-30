@@ -49,3 +49,5 @@ tools {
 ## Result
 Pipeline runs end-to-end successfully: Checkout → Install Dependencies → Run Tests → Build → Archive Artifacts, with a green build in Blue Ocean.
 
+<img width="1920" height="1080" alt="Screenshot (25)" src="https://github.com/user-attachments/assets/71fbf050-97c9-4a21-98fb-ffe85e66a2fc" />
+
