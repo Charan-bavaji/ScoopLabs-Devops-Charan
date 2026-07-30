@@ -1,4 +1,4 @@
-# Task 4: Extending Jenkins Capabilities
+Extending Jenkins Capabilities
 
 ## Detailed Description
 Extending Jenkins capabilities — installed additional plugins to expand what Jenkins can do out of the box.
@@ -27,5 +27,7 @@ The tradeoff is that plugin quality/maintenance varies, and plugin updates can o
 
 ## Submission
 Screenshot of the **Installed** tab showing Blue Ocean and Docker Pipeline successfully installed:
+
+<img width="1920" height="1080" alt="Screenshot (24)" src="https://github.com/user-attachments/assets/9e632824-3250-4f5e-b5da-6d6bf3df4013" />
 
 
