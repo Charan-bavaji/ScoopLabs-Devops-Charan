@@ -40,3 +40,5 @@ GitHub sent an initial ping immediately on save — confirmed via a `200` respon
 ### 4. Live test
 Pushed a small commit to the repository and switched to the Jenkins dashboard — the job triggered automatically without manually clicking "Build Now", confirming the webhook → Jenkins integration works end-to-end.
 
+<img width="1920" height="1080" alt="Screenshot (26)" src="https://github.com/user-attachments/assets/8781493e-c7fb-48a6-b58a-39e0f7d03da3" />
+<img width="1920" height="1080" alt="Screenshot (27)" src="https://github.com/user-attachments/assets/26bd4ff9-c67a-4e86-8ad0-007b586f232d" />
