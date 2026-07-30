@@ -62,4 +62,5 @@ Jenkinsfile code: included above.
 
 Screenshot of the Pipeline Stage View showing successful completion of all three stages:
 
+<img width="1920" height="1080" alt="Screenshot (25)" src="https://github.com/user-attachments/assets/85698028-2b3a-4fb1-9e19-fe2e07b16aea" />
 
