@@ -1,0 +1,31 @@
+# Task 4: Extending Jenkins Capabilities
+
+## Detailed Description
+Extending Jenkins capabilities — installed additional plugins to expand what Jenkins can do out of the box.
+
+## Concept Task
+
+**Why does Jenkins rely so heavily on plugins?**
+
+Jenkins' core is intentionally lightweight — it only provides the base automation engine (job scheduling, build execution, the web UI). Almost everything else — SCM integration, pipeline syntax, notifications, cloud/container support, UI improvements — is delivered through plugins. Jenkins leans on this model heavily because:
+
+- **Modularity / lean core.** Not every user needs Git, Docker, Kubernetes, Slack, and AWS integrations at once. Plugins let each installation stay lightweight and only load what's actually needed.
+- **Massive ecosystem coverage.** With 1,800+ plugins available, Jenkins can integrate with virtually any tool in the DevOps toolchain (SCM systems, artifact repositories, cloud providers, testing/quality tools, chat/notification systems) without the core team having to build and maintain all of it.
+- **Faster innovation.** New tools and integrations (e.g. a new cloud provider, a new testing framework) can be supported quickly via a community-built plugin, without waiting on a Jenkins core release.
+- **Customizable UI/UX.** Plugins like Blue Ocean can completely change how pipelines are visualized, without altering Jenkins' core.
+- **Community-driven extensibility.** Since Jenkins is open-source, plugins let the community build and share integrations, keeping Jenkins relevant across a huge range of use cases rather than the core maintainers having to anticipate everything.
+
+The tradeoff is that plugin quality/maintenance varies, and plugin updates can occasionally break pipelines (a known Jenkins pain point) — which is why version-pinning and testing plugin upgrades in a non-prod Jenkins instance is a common best practice.
+
+## Hands-on Task
+- Navigated to **Manage Jenkins → Plugins → Available plugins**.
+- Searched for and selected:
+  - **Blue Ocean**
+  - **Docker Pipeline**
+- Installed the plugins and selected **Restart Jenkins when installation is complete and no jobs are running** for a safe restart.
+- Confirmed Jenkins came back up successfully after the restart.
+
+## Submission
+Screenshot of the **Installed** tab showing Blue Ocean and Docker Pipeline successfully installed:
+
+
