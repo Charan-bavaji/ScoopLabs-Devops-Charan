@@ -27,3 +27,4 @@ Jenkins is one of the most popular CI servers because:
 
 ## Submission
 Screenshot of the Jenkins dashboard showing the logged-in admin user:
+<img width="1920" height="1080" alt="Screenshot (21)" src="https://github.com/user-attachments/assets/a6304e2d-1932-45c6-96d6-cac56cd6d0ea" />
