@@ -35,8 +35,11 @@ Both are ways to trigger a Jenkins build automatically when code changes, but th
 ## Submission
 Screenshot of the configured Build Trigger section:
 
+<img width="1920" height="1080" alt="Screenshot (25)" src="https://github.com/user-attachments/assets/59866eba-0521-49d3-b490-ab2370281c09" />
 
 
 Screenshot of the corresponding build history:
+
+<img width="1917" height="1020" alt="Screenshot 2026-07-28 121027" src="https://github.com/user-attachments/assets/61ecd431-122c-4948-8845-8dad8cc15044" />
 
 
