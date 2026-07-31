@@ -50,5 +50,10 @@ Root cause: Spring Petclinic's own `pom.xml` runs a custom Checkstyle rule (`noh
 
 ## Screenshots
 - [ ] Baseline run — 4:25
+<img width="1920" height="1080" alt="Screenshot (36)" src="https://github.com/user-attachments/assets/552760db-5594-40e2-ab32-d1234603ca77" />
+
 - [ ] Optimized run 1 (cold cache) — 4:19
+<img width="1920" height="1080" alt="Screenshot (35)" src="https://github.com/user-attachments/assets/836023a2-6d28-42ff-b2ca-1c2b56c5f558" />
+
 - [ ] Optimized run 2 (warm cache) — 52 sec
+<img width="1920" height="1080" alt="Screenshot (35)" src="https://github.com/user-attachments/assets/6e812f66-5809-4c8c-b877-d9403acc923e" />
