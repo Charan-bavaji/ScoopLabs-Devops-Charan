@@ -18,9 +18,9 @@ Forked [`spring-petclinic`](https://github.com/spring-projects/spring-petclinic)
 |---|---|---|
 | **Baseline** | Full git clone + fresh `.m2` cache forced every run | **4 min 25 sec** |
 | **Optimized — Run 1** | Shallow clone (`depth: 1`) + persistent `.m2` cache (cold — first population) | **4 min 19 sec** |
-| **Optimized — Run 2** | Shallow clone + persistent `.m2` cache (warm — reused) | **52 sec** |
+| **Optimized — Run 2** | Shallow clone + persistent `.m2` cache (warm — reused) | **54 sec** |
 
-**Result: ~80% reduction in build time** (205s → 52s) once the dependency cache is warm.
+**Result: ~80% reduction in build time** (207s → 54s) once the dependency cache is warm.
 
 ## Why Optimized Run 1 Was Slower Than the Baseline
 
@@ -53,7 +53,7 @@ Root cause: Spring Petclinic's own `pom.xml` runs a custom Checkstyle rule (`noh
 <img width="1920" height="1080" alt="Screenshot (36)" src="https://github.com/user-attachments/assets/552760db-5594-40e2-ab32-d1234603ca77" />
 
 - [ ] Optimized run 1 (cold cache) — 4:19
-<img width="1920" height="1080" alt="Screenshot (35)" src="https://github.com/user-attachments/assets/836023a2-6d28-42ff-b2ca-1c2b56c5f558" />
-
-- [ ] Optimized run 2 (warm cache) — 52 sec
 <img width="1920" height="1080" alt="Screenshot (35)" src="https://github.com/user-attachments/assets/6e812f66-5809-4c8c-b877-d9403acc923e" />
+
+- [ ] Optimized run 2 (warm cache) — 54 sec
+<img width="1920" height="1080" alt="Screenshot (35)" src="https://github.com/user-attachments/assets/836023a2-6d28-42ff-b2ca-1c2b56c5f558" />
