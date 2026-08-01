@@ -32,4 +32,5 @@ docker run hello-world
 **Expected output:** The `hello-world` container prints a confirmation message showing the Docker client successfully contacted the Docker daemon, pulled the `hello-world` image, and ran it in a new container.
 
 ## Submission Requirements
-- [ ] Screenshot of terminal showing the output of `docker run hello-world`
+<img width="1920" height="1080" alt="Screenshot (37)" src="https://github.com/user-attachments/assets/cbcd64c4-4af3-4c15-a808-6bd42eb6f9bd" />
+
