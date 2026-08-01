@@ -38,6 +38,4 @@ docker ps
 
 Verified by browsing to `http://localhost:8080` and seeing the Nginx welcome page.
 
-## Submission Requirements
-- [ ] Screenshot of `docker images` showing `nginx` in the list
-- [ ] Screenshot of `docker ps` showing `my-nginx` running with port mapping `0.0.0.0:8080->80/tcp`
+<img width="1920" height="1080" alt="Screenshot (38)" src="https://github.com/user-attachments/assets/59c96864-a06e-451c-85e8-854836a62c1d" />
