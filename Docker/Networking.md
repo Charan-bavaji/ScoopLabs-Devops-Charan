@@ -37,8 +37,8 @@ docker exec -it ubuntu1 ping -c 4 ubuntu2
 **Result:** Successful ping replies from `ubuntu2`, confirming DNS-based name resolution works on the custom bridge network — this would fail on the default `bridge` network, which lacks embedded DNS.
 
 ## Submission Requirements
-- [x] Networking commands used (above)
-- [ ] Screenshot of the successful `ping` output from inside `ubuntu1`
+<img width="1920" height="1080" alt="Screenshot (42)" src="https://github.com/user-attachments/assets/a230aaf3-4fa2-4cf0-b42a-857a53ae1255" />
+
 
 ## Notes
 - The base `ubuntu` image doesn't ship with `ping` — `iputils-ping` needs to be installed manually via `apt-get`.
