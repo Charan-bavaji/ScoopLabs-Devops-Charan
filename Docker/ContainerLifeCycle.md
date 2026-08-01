@@ -35,7 +35,5 @@ docker ps -a        # should NOT show my-nginx anymore
 docker images        # should NOT show nginx anymore
 ```
 
-## Submission Requirements
-- [x] Log of commands used: `docker stop my-nginx`, `docker rm my-nginx`, `docker rmi nginx` (above)
-- [ ] Screenshot of `docker ps -a` (no my-nginx)
-- [ ] Screenshot of `docker images` (no nginx)
+<img width="1920" height="1080" alt="Screenshot (39)" src="https://github.com/user-attachments/assets/8d6c202f-9221-4940-bb92-a23a3e033f90" />
+
