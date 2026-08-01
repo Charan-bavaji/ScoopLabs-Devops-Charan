@@ -46,11 +46,12 @@ docker run hello-python
 Hello World from inside a Docker container!
 ```
 
-## Submission Requirements
+## Submission 
 - [x] Dockerfile code (above)
 - [x] Python script (above)
-- [ ] Console output screenshot of `docker build -t hello-python .`
-- [ ] Console output screenshot of `docker run hello-python`
+
+<img width="1920" height="1080" alt="Screenshot (40)" src="https://github.com/user-attachments/assets/17919fa5-78d6-4f16-939c-c2e6343b84ae" />
+
 
 ## Notes
 - `WORKDIR /app` sets the working directory inside the image so `COPY hello.py .` lands at `/app/hello.py`.
