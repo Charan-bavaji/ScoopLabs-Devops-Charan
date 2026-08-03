@@ -1,0 +1,55 @@
+# Docker Assignment 5 — Volumes
+
+## Detailed Description
+Persisting container data.
+
+## Concept Task
+**Why is data lost when a container is destroyed, and how do Volumes solve this?**
+
+Every container gets its own writable layer on top of the image's read-only layers. Any file changes made while the container runs — new files, database writes, logs — live in that writable layer. When the container is removed (`docker rm`), that writable layer is deleted along with it, so anything not baked into the image is gone.
+
+Volumes solve this by storing data outside the container's writable layer, in a location managed by Docker on the host filesystem. A volume is mounted into the container at a specific path — the container writes to that path like normal, but the actual bytes live in the volume, independent of the container's lifecycle. Destroy the container, recreate it, remount the same volume, and the data is still there.
+
+**Summary:** Container writable layers are ephemeral and die with the container — volumes decouple data storage from the container lifecycle by persisting it on the host, managed by Docker, independent of any single container instance.
+
+## Hands-on Task
+Created a Docker Volume and mounted it to a MySQL container to persist database files on the host machine.
+
+### Commands
+```bash
+# Create a named volume
+docker volume create mysql-data
+
+# Run a MySQL container, mounting the volume to MySQL's data directory
+docker run -d \
+  --name my-mysql \
+  -e MYSQL_ROOT_PASSWORD=rootpass \
+  -v mysql-data:/var/lib/mysql \
+  mysql:8.0
+
+# Verify the volume exists
+docker volume ls
+
+# Inspect it to see where it lives on the host
+docker volume inspect mysql-data
+```
+
+### Persistence check (optional)
+```bash
+docker rm -f my-mysql
+
+docker run -d \
+  --name my-mysql \
+  -e MYSQL_ROOT_PASSWORD=rootpass \
+  -v mysql-data:/var/lib/mysql \
+  mysql:8.0
+# Data from before persists since the volume is unchanged
+```
+
+## Submission Requirements
+<img width="1920" height="1080" alt="Screenshot (41)" src="https://github.com/user-attachments/assets/cafda74f-404e-4772-ba19-26f7d86f5812" />
+
+
+## Notes
+- Volumes are the Docker-recommended way to persist data, versus bind mounts which tie the container to a specific host path.
+- `docker volume inspect` shows the `Mountpoint` field — the actual location on the host filesystem where Docker stores the volume's data.
