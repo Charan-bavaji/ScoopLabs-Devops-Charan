@@ -32,5 +32,27 @@ Storage in GB: 4.66 GB
 ```
 
 ## Files
-- `calculate_storage.py` — main script
-- `execution_output.png` — execution output screenshot (add before pushing)
+## Code
+ 
+```python
+"""
+Assignment: Functions - L1
+Task: Write a function that converts bytes to Gigabytes (GB) and print the result.
+"""
+ 
+def calculate_storage(total_bytes):
+    """Convert a value in bytes to Gigabytes (GB)."""
+    gb = total_bytes / (1024 ** 3)
+    return gb
+ 
+ 
+# Call the function and print the result
+total_bytes = 5000000000  # example: 5,000,000,000 bytes
+storage_in_gb = calculate_storage(total_bytes)
+ 
+print(f"Total Bytes: {total_bytes}")
+print(f"Storage in GB: {storage_in_gb:.2f} GB")
+```
+
+<img width="1916" height="1018" alt="Screenshot 2026-08-11 090445" src="https://github.com/user-attachments/assets/f3be7b81-14ac-4ede-882d-4ec9158b1f2d" />
+
