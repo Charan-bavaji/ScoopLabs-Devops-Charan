@@ -136,6 +136,11 @@ Error: The log file was not found at the specified path.
 
 ## Files
 - `access.log` — sample Nginx combined-format log (input data)
+-203.0.113.5 - - [11/Aug/2026:10:15:01 +0000] "GET /index.html HTTP/1.1" 200 512 "-" "Mozilla/5.0"
+-203.0.113.5 - - [11/Aug/2026:10:15:03 +0000] "GET /about.html HTTP/1.1" 200 480 "-" "Mozilla/5.0"
+-198.51.100.23 - - [11/Aug/2026:10:15:05 +0000] "GET /wp-admin.php HTTP/1.1" 404 162 "-" "curl/7.68.0"
+
 - `log_analyzer.py` — main script
-- `report.json` — generated JSON report (output)
+
+<img width="1917" height="1020" alt="Screenshot 2026-08-11 121747" src="https://github.com/user-attachments/assets/2e74d338-cdfc-4dd6-8c13-646d22d5546d" />
 
