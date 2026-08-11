@@ -167,4 +167,5 @@ else:
 - `disk_monitor.py` — main script
 - `alerts.log` — generated log file (created only when threshold is exceeded)
 
-![Uploading Screenshot 2026-08-11 103001.png…]()
+<img width="1917" height="1020" alt="Screenshot 2026-08-11 103001" src="https://github.com/user-attachments/assets/b3303dad-bb90-465e-8d28-8c0cd1cf8bf3" />
+
