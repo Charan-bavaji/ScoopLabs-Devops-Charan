@@ -42,4 +42,4 @@ Type: <class 'bool'>
 
 ## Files
 - `data_types_demo.py` — main script
-- `screenshot.png` — console output screenshot (add your screenshot here before pushing)
+<img width="1917" height="1021" alt="Screenshot 2026-08-11 084856" src="https://github.com/user-attachments/assets/64649cee-f6b5-4881-8a4b-ae34b48e7d3a" />
