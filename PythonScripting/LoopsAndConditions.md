@@ -31,5 +31,25 @@ Server 3 is UP. All good.
 ```
 
 ## Files
-- `server_status_check.py` — main script
-- `execution_output.png` — execution output screenshot (add before pushing)
+## Code
+ 
+```python
+"""
+Assignment: Loops and Conditions - L1
+Task: Iterate through a list of server statuses.
+      If a server is "DOWN", print a warning message.
+"""
+ 
+# List of server statuses
+server_statuses = ["UP", "DOWN", "UP"]
+ 
+# Iterate through the list using a for loop
+for index, status in enumerate(server_statuses, start=1):
+    if status == "DOWN":
+        print(f"WARNING: Server {index} is DOWN!")
+    else:
+        print(f"Server {index} is UP. All good.")
+```
+
+<img width="1917" height="1018" alt="Screenshot 2026-08-11 085634" src="https://github.com/user-attachments/assets/6849994d-1cd6-4fae-a330-b7b7b880540e" />
+
