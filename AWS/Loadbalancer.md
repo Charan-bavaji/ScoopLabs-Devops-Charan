@@ -59,3 +59,5 @@ ALB is "smart" and content-aware (routes based on what's in the request), NLB is
   - Target group name
   - Protocol/Port (HTTP : 80)
   - Registered targets and their health status
+  <img width="1917" height="833" alt="Screenshot 2026-08-14 120958" src="https://github.com/user-attachments/assets/81a888e4-dd77-4298-8ee0-f6ca214d204d" />
+
