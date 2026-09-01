@@ -27,4 +27,5 @@ Since the Deployment currently has 3 replicas running, this command tells the Re
 Run `kubectl get pods` right after the scale command (or add `-w` to watch it live) to catch the 2 extra Pods in `Terminating` status before they fully disappear.
 
 ## Submission
+<img width="943" height="414" alt="Screenshot 2026-09-01 152410" src="https://github.com/user-attachments/assets/564886a2-8101-47c3-b86f-66e2e4e7400e" />
 
