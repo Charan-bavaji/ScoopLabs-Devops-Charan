@@ -36,5 +36,4 @@ During the update, a new Pod comes up with the updated image, passes its readine
 
 ## Submission
 
-- Command used: `kubectl set image deployment/nginx-deployment nginx=nginx:1.26`
-- Screenshot: `kubectl rollout status deployment/nginx-deployment` showing the successful rollout confirmation
+<img width="952" height="857" alt="Screenshot 2026-09-01 152825" src="https://github.com/user-attachments/assets/bdfb9729-7013-4e64-8a6e-9f684ee9f117" />
