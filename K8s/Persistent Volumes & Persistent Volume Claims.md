@@ -38,4 +38,5 @@ kubectl get pvc
 The `STATUS` column should show `Bound` shortly after applying — meaning the cluster's default StorageClass automatically provisioned a matching PersistentVolume and bound it to this claim, with no manual PV creation needed.
 
 ## Submission
+<img width="1918" height="327" alt="Screenshot 2026-09-01 153450" src="https://github.com/user-attachments/assets/9d40b778-7df4-4706-8bc4-3773a34fc4eb" />
 
