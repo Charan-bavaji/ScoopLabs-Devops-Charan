@@ -52,5 +52,6 @@ minikube service nginx-nodeport --url
 
 
 ## Submission
+<img width="1918" height="1017" alt="Screenshot 2026-09-01 152130" src="https://github.com/user-attachments/assets/4d0550f7-3bc7-4ce8-956f-e03b4a3a1417" />
 
 
