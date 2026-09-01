@@ -29,4 +29,5 @@ Steps taken:
 
 ## Submission
 
+<img width="1919" height="1020" alt="Screenshot 2026-08-31 125727" src="https://github.com/user-attachments/assets/8ece139f-08a3-4982-bb19-9b11f18d65bb" />
 
