@@ -56,4 +56,5 @@ kubectl get pods
 The second command (no `-n` flag, defaults to the `default` namespace) should NOT show `nginx-qa` — confirming the pod is strictly isolated to `qa-env`.
 
 ## Submission
+<img width="953" height="678" alt="Screenshot 2026-09-01 153136" src="https://github.com/user-attachments/assets/12d19d0e-d477-4972-b1d4-0feac2fc08a5" />
 
