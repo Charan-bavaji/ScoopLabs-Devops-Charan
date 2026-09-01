@@ -36,4 +36,5 @@ kubectl get pods
 ```
 
 ## Submission
+<img width="953" height="591" alt="Screenshot 2026-09-01 151530" src="https://github.com/user-attachments/assets/1529c1d2-4681-4592-9c64-273b07cd88de" />
 
