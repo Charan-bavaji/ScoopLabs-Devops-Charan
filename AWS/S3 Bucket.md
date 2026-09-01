@@ -49,4 +49,5 @@ https://charans-bucket-2026.s3.ap-south-1.amazonaws.com/hello.txt
 ## Submission Requirements
 
 - **Bucket policy used:** included above (`PublicReadForHelloTxt` statement, scoped to `hello.txt` only).
-- **Screenshot of file accessed successfully via public browser URL:** *[to be added]*
+<img width="1920" height="914" alt="Screenshot (54)" src="https://github.com/user-attachments/assets/2f63cb72-1cb3-4c1d-818e-e7849495fe20" />
+
