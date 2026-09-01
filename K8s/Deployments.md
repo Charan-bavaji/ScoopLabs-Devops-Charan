@@ -47,5 +47,6 @@ kubectl get deployments
 ```
 
 ## Submission
+<img width="950" height="863" alt="Screenshot 2026-09-01 151829" src="https://github.com/user-attachments/assets/507de24f-3ee9-4dc1-896a-59dfe2ee191b" />
 
 
