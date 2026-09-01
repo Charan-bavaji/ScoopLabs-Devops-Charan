@@ -46,4 +46,5 @@ A developer who only needs to check files in an S3 bucket should get an IAM poli
 ---
 
 ## Submission Requirements
+<img width="1917" height="866" alt="Screenshot 2026-08-24 115111" src="https://github.com/user-attachments/assets/4457a44e-6868-4d17-8f7c-d1689435ceb4" />
 
