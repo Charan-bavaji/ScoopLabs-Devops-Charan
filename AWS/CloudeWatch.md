@@ -57,6 +57,7 @@ build a basic CloudWatch dashboard visualizing CPU Utilization.
 ---
 
 ## Submission Requirements
-<img width="1903" height="809" alt="Screenshot 2026-09-03 144433" src="https://github.com/user-attachments/assets/273eab3e-b810-4074-8815-ecaae0603c24" />
+
+<img width="1919" height="801" alt="Screenshot 2026-09-03 145258" src="https://github.com/user-attachments/assets/29d3ae00-9b12-4738-bc23-99c4eb52e19e" />
 
 
