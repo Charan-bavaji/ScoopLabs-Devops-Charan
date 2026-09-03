@@ -81,4 +81,5 @@ across the group exceeds 70%, one additional instance is launched.
 
 ## Submission Requirements
 
+<img width="1919" height="806" alt="Screenshot 2026-09-03 143814" src="https://github.com/user-attachments/assets/0f2d5097-8e25-4278-ad1d-93141c31d6ae" />
 
