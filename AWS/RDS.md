@@ -59,7 +59,7 @@ record the connection endpoint.
 7. Copied the **Endpoint URL** from the Connectivity & security tab:
 
    ```
-   <db-identifier>.xxxxxxxxxx.<region>.rds.amazonaws.com
+   my-first-rds.cnwcumo2et8s.ap-south-1.rds.amazonaws.com
    ```
 
    (This endpoint plus port 3306 is what an application or EC2 instance
@@ -69,4 +69,5 @@ record the connection endpoint.
 
 ## Submission Requirements
 
+<img width="1903" height="809" alt="Screenshot 2026-09-03 144433" src="https://github.com/user-attachments/assets/bd3cb8f8-1ffc-4917-8c68-bc4249962f4c" />
 
