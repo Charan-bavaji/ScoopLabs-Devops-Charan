@@ -34,3 +34,5 @@ terraform destroy -auto-approve
 ```
  
 ## Screenshots
+<img width="1920" height="1080" alt="Screenshot (81)" src="https://github.com/user-attachments/assets/7c84d254-2d75-4d61-94fe-87ab086efc0e" />
+<img width="1175" height="971" alt="image" src="https://github.com/user-attachments/assets/f2fc2b8e-f2a0-4cf9-8d5b-bd78135c58ce" />
