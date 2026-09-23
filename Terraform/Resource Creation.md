@@ -36,4 +36,5 @@ terraform apply   # confirmed with 'yes', instance provisioned
 
 ## Submission Requirements
 - `.tf` code: included above (also in `main.tf`).
+<img width="1919" height="559" alt="Screenshot 2026-09-17 095318" src="https://github.com/user-attachments/assets/06b832b1-92c3-4df5-8300-50d87b4efee8" />
 
