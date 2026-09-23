@@ -41,3 +41,5 @@ Run `terraform apply -auto-approve` if you want to actually provision both, then
 - **Standardizing security policies:** The security group rules live in one place. Tightening SSH access, for example, is a single change that automatically applies everywhere the module is used.
 - **Reducing blast radius:** Environments are isolated behind clear inputs (`environment_name`, `instance_size`). A mistake in a variable passed to `dev_server` cannot accidentally reconfigure `prod_server` — the module boundary limits how far a change or an error can spread.
 ## Submission Checklist
+<img width="1918" height="968" alt="image" src="https://github.com/user-attachments/assets/ae135288-6a60-49b6-bd39-ee59a5b0c38a" />
+<img width="952" height="930" alt="image" src="https://github.com/user-attachments/assets/8466a107-c4d7-48f8-9d82-876cc3744d22" />
