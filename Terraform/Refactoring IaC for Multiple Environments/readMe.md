@@ -5,7 +5,7 @@ A 300-line `main.tf` provisions a single web server. The business now needs Dev,
  
 ## Directory Structure
 ```
-terraform-environments/
+Refactoring IaC for Multiple Environments/
 ├── main.tf                     # Root config - calls the module twice (Dev, Prod)
 ├── outputs.tf                  # Root outputs - IPs of both servers
 └── modules/
